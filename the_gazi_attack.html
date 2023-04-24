@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- font-awesome cdn link  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Advanced Level Movies Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="end_bx">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li>Category <i class="fas fa-angle-down"></i>
+                        <div class="list">
+                            <a href="#">Trends Now</a>
+                            <a href="#">Popular</a>
+                            <a href="#">Prefrenes</a>
+                            <a href="#">Recently Added</a>
+                            <a href="#">Bollywood</a>
+                            <a href="#">Tollywood</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Search movies..." id="search">
+                    <i class="fas fa-search" id="search_icon"></i>
+                </div>
+                <div class="bell">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="user">
+                    <img src="img/user.png" alt="Jahid Khan" title="jahid khan">
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h6>Duration: <span id="header_dur">1h 47min</span></h6>
+            <h3 id="header_gen"><i class="fas fa-star"></i>6.5
+                <span>Action / Adventure / Sci-Fi</span>
+            </h3>
+            <h1 id="header_title">Rampage</h1>
+            <p id="header_pra">From Wikipedia, the free encyclopedia Rampage is a series of video games released by Midway (1986–2009) and Warner Bros. Interactive Entertainment (2009–present) for the arcade and various consoles. The basic premise of the games is that,
+                due to experiment-related accidents, the player controls a human transformed into a giant monster.</p>
+            <div class="btns">
+                <a href="#video"> <button><i class="fas fa-play" id="play_btn"></i> WATCH</button></a>
+                <button><i class="fas fa-plus"></i> ADD LIST</button>
+            </div>
+        </div>
+        <div class="slider_btns">
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+        </div>
+    </header>
+    <!-- download page start  -->
+    <div class="down_bx_1" id="download">
+        <div class="down_page"> </div>
+    </div>
+    <!-- download page end  -->
+    <!-- trending box start  -->
+    <div class="tranding_bx">
+        <li><a href="#" class="active"><i class="fas fa-angle-double-up"></i> Trends Now <span></span></a></li>
+        <li><a href="#"><i class="fas fa-fire"></i> Popular <span></span></a></li>
+        <li><a href="#"><i class="fas fa-star"></i> Prefrenes <span></span></a></li>
+        <li><a href="#"><i class="fas fa-plus"></i> Recently Added <span></span></a></li>
+    </div>
+
+    <!-- category box start  -->
+    <div class="cato_bx" id="cato_bx">
+        <button id="action1">Action</button>
+        <button id="crime1">Crime</button>
+        <button>Adeventure</button>
+        <button>Biography</button>
+        <button>Animation</button>
+        <button>Comady</button>
+        <button>Documentary</button>
+        <button id="drama1">Drama</button>
+        <button>WebSeries</button>
+        <button>18+</button>
+        <button>SciFi</button>
+        <button>Horor</button>
+        <!-- all button copyed  -->
+        <div class="cato_left_right">
+            <i class="fas fa-angle-down" id="left_scroll"></i>
+        </div>
+        <div class="cato_left_right">
+            <i class="fas fa-angle-down" id="right_scroll"></i>
+        </div>
+    </div>
+
+    <!-- movies box strat  -->
+    <div class="movie_bx_1" id="mvoes_bx_1">
+        <button id="left_scroll1"> <i class="fas fa-angle-down" ></i></button>
+        <button id="right_scroll1"> <i class="fas fa-angle-down" ></i></button>
+        <div class="movie_bxx" id="action_bx"></div>
+        <div class="movie_bxx" id="crime_bx"></div>
+        <div class="movie_bxx" id="drama_bx"></div>
+    </div>
+    <!-- movies box end  -->
+    <!-- video box start  -->
+    <div class="video_bx">
+        <video src="video/ant-man.mp4" id="video"></video>
+        <div class="control">
+            <div class="play_redo">
+                <i class="bi bi-play-fill" id="play"></i>
+                <i class="bi bi-arrow-clockwise" id="sec_30"></i>
+                <span>10</span>
+            </div>
+            <div class="start_seekbar_end">
+                <span id="start_time">28.04</span>
+                <div class="seek">
+                    <input type="range" id="seek" value="0">
+                    <h5 id="seek_2"></h5>
+                    <h4></h4>
+                    <h6 id="seek_dot"></h6>
+                </div>
+                <span id="end_time">40.06</span>
+            </div>
+            <div class="cc_vol_screen">
+                <i class="bi bi-badge-cc-fill"></i>
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" name="vol" id="vol">
+                <i class="bi bi-arrows-fullscreen" id="full_screen"></i>
+            </div>
+        </div>
+
+        <h4 class="title_video">Rampage trailer hd coming soon</h4>
+        <span class="watching"><i class="fas fa-eye"></i>Watching</span>
+        <div class="heart_pluse"> <i class="fas fa-heart"></i> <i class="fas fa-plus"></i></div>
+        <div class="video_list">
+            <img src="img/121213.jpg" alt="" class="video_1">
+            <img src="img/121214.jpg" alt="" class="video_1">
+            <img src="img/121215.jpg" alt="" class="video_1">
+        </div>
+    </div>
+    <!-- video box end  -->
+
+    <!-- trending box2 start  -->
+    <div class="tranding_bx" style="margin-top: 20px;">
+        <li><a href="#" class="active"><i class="fas fa-photo-video"></i> Movies <span></span></a></li>
+        <li><a href="#"><i class="fas fa-film"></i> Series <span></span></a></li>
+        <li><a href="#"><i class="fas fa-check"></i> Original Series <span></span></a></li>
+        <li><a href="#"> Tralier <span></span></a></li>
+    </div>
+    <div class="cato_bx cato_bx2">
+        <div class="left_cato">
+            <button>Sort by:</button>
+            <button id="all_btn">All</button>
+            <button id="latest_btn">Latest</button>
+            <button id="year">Year <i class="fas fa-angle-down" ></i>
+            <div class="year_bx">
+                <li id="year2022__btn">2022</li>
+                <li id="year2021__btn">2021</li>
+                <li id="year2020__btn">2020</li>
+                <li>2019</li>
+                <li>2018</li>
+                <li>2017</li>
+                <li>2016</li>
+                <li>2015</li>
+                <li>2014</li>
+            </div>
+            </button>
+            <button id="a_z">A-Z <i class="fas fa-angle-down" ></i>
+                <div class="year_bx letter_bx">
+                    <li id="letter_a_btn">A</li>
+                    <li id="letter_b_btn">B</li>
+                    <li>C</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li id="letter_t_btn">T</li>
+                    <li>Z</li>
+                </div></button>
+        </div>
+        <div class="right_cato">
+            <i class="fas fa-star"></i>
+            <input type="range" name="" id="change_input" min="4.2" max="9.9">
+            <span>7.0</span>
+        </div>
+    </div>
+
+    <div class="movie_bx_1 movie_bx_2">
+        <div class="all box2_actives" id="all"></div>
+        <div class="latest box2_actives" id="latest"></div>
+        <div class="year" id="year_2022"></div>
+        <div class="year" id="year_2021"></div>
+        <div class="year" id="year_2020"></div>
+        <div class="letter" id="letter_a"></div>
+        <div class="letter" id="letter_b"></div>
+        <div class="letter" id="letter_t"></div>
+        <div class="rate_change" id="rate4"></div>
+        <div class="rate_change" id="rate8"></div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        let download = document.getElementById('download');
+
+        const the_gazi_attack = movies.filter((e) => {
+            return e.title == "The Gazi Attack";
+        });
+
+        window.addEventListener('load', () => {
+            the_gazi_attack.forEach(element => {
+                const {
+                    title,
+                    rate,
+                    down_img,
+                    screen1,
+                    screen2,
+                    screen3,
+                    ph420,
+                    ph720,
+                    ph1080
+                } = element;
+                let card = document.createElement('div');
+                card.classList.add('down_page');
+                card.innerHTML = `
+                <div class="img_bx">
+                <img src="${down_img}" alt="">
+            </div>
+            <div class="cont_bx">
+                <h1>${title}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod facere id non molestias asperiores, quas ducimus ut nemo saepe tempora libero animi itaque esse ab praesentium exercitationem.</p>
+                <h3><span>IMDB</span> <i class="fas fa-star"></i> ${rate}</h3>
+                <div class="screen_shot_bx">
+                    <img src="${screen1}" alt="">
+                    <img src="${screen2}" alt="">
+                    <img src="${screen3}" alt="">
+                </div>
+                <div class="btns">
+                    <a href="${ph420}" download>480ph</a>
+                    <a href="${ph720}" download>720px</a>
+                    <a href="${ph1080}" download>1080px</a>
+                </div>
+            </div>
+                `
+                download.appendChild(card);
+            });
+        })
+    </script>
+</body>
+
+</html>
